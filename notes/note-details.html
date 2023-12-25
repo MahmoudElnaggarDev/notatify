@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <title>Notatify</title>
+  <link rel="stylesheet" href="note-details.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+      <div>
+        <button id="removeFormat"><i class="fas fa-broom"></i></button>
+        <button id="copy"><i class="fas fa-copy"></i></button>
+        <button id="cut"><i class="fas fa-cut"></i></button>
+        <button id="undo"><i class="fas fa-undo"></i></button>
+        <button id="redo"><i class="fas fa-redo"></i></button>
+      </div>
+    </nav>
+    <h3 id="noteTitle"></h3>
+    <hr>
+    <div contenteditable="true" id="noteContent"></div>
+  </div>
+  <div class="buttons">
+    <span class="group">
+      <button id="bold"><i class="fas fa-bold"></i></button>
+      <button id="italic"><i class="fas fa-italic"></i></button>
+      <button id="underline"><i class="fas fa-underline"></i></button>
+      <button id="strikeThrough"><i class="fas fa-strikethrough"></i></button>
+      <button id="subscript"><i class="fas fa-subscript"></i></button>
+      <button id="superscript"><i class="fas fa-superscript"></i></button>
+    </span>
+    <span class="group">
+      <button id="justifyLeft"><i class="fas fa-align-left"></i></button>
+      <button id="justifyCenter"><i class="fas fa-align-center"></i></button>
+      <button id="justifyRight"><i class="fas fa-align-right"></i></button>
+      <button id="justifyFull"><i class="fas fa-align-justify"></i></button>
+    </span>
+    <span class="group">
+      <button id="fontSize" data-num="1"><i class="fas fa-1"></i></button>
+      <button id="fontSize" data-num="2"><i class="fas fa-2"></i></button>
+      <button id="fontSize" data-num="3"><i class="fas fa-3"></i></button>
+      <button id="fontSize" data-num="4"><i class="fas fa-4"></i></button>
+      <button id="fontSize" data-num="5"><i class="fas fa-5"></i></button>
+      <button id="fontSize" data-num="6"><i class="fas fa-6"></i></button>
+      <button id="fontSize" data-num="7"><i class="fas fa-7"></i></button>
+    </span>
+    <span class="group">
+      <button id="outdent"><i class="fas fa-indent"></i></button>
+      <button id="indent"><i class="fas fa-outdent"></i></button>
+      <button id="insertOrderedList"><i class="fas fa-list-ol"></i></button>
+      <button id="insertUnorderedList"><i class="fas fa-list-ul"></i></button>
+    </span>
+    <span class="group">
+      <button id="insertHorizontalRule"><i class="fas fa-left-right"></i></button>
+      <button id="backColor"><i class="fas fa-highlighter"></i></button>
+    </span>
+    <span class="group">
+      <button id="noto" data-attr="fontName">نوتو</button>
+      <button id="hafs" data-attr="fontName">حفص</button>
+      <button id="naskh" data-attr="fontName">نسخ</button>
+      <button id="qalam" data-attr="fontName">قلم</button>
+    </span>
+  </div>
+  <script src="../js/sweetalert2.all.min.js"></script>
+  <script src="note-details.js"></script>
+</body>
+</html>

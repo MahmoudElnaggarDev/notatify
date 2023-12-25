@@ -1,0 +1,4 @@
+const currentNote=JSON.parse(localStorage.getItem('currentNote'));document.getElementById('noteTitle').innerText=currentNote.title;const noteContent=document.getElementById("noteContent");if(localStorage.getItem(`${currentNote.title}-text`)){noteContent.innerHTML=localStorage.getItem(`${currentNote.title}-text`);}
+noteContent.addEventListener("input",()=>{localStorage.setItem(`${currentNote.title}-text`,noteContent.innerHTML)});let buttons=document.querySelectorAll("button");buttons.forEach(button=>{button.addEventListener("click",()=>{let id=button.getAttribute("id");if(button.getAttribute("data-attr")==="fontName"){document.execCommand("fontName",false,id)}else if(id==="backColor"){document.execCommand(id,false,"yellow");}else if(id==="fontSize"){let value=button.getAttribute("data-num")
+document.execCommand(id,false,value);}else{document.execCommand(id,false,null);}
+noteContent.focus();});});

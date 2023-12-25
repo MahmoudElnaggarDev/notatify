@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <title>Notatify</title>
+   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">قائمة الملاحظات</h1>
+    <div class="inputs">
+      <input type="text" id="noteTitleInput" placeholder="ادخل عنوان الملاحظة">
+      <button class="addButton" onclick="addNote()">إضافة</button>
+    </div>
+    <ul id="noteList"></ul>
+  </div>
+  <script src="js/Sortable.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
